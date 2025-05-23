@@ -8,7 +8,7 @@ An AI-powered resume assistant that takes your resume (or LinkedIn export) and a
 - ❓ Interview preparation Q&A  
 - 📊 Skill gap and job match analysis  
 
-Runs completely **locally** using a LLaMA-based large language model — no internet or API keys needed!
+Runs on OpenAI API Key.
 
 ---
 
@@ -16,25 +16,9 @@ Runs completely **locally** using a LLaMA-based large language model — no inte
 
 - Upload resume in PDF, DOCX, or text
 - Paste or upload job description
-- Generates custom application content with local LLM
-- Uses Retrieval-Augmented Generation (RAG) and memory
+- Uses API key 
 - Clean UI built in Streamlit
 
----
-
-## 🛠️ Tech Stack
-
-| Component        | Tool/Library              |
-|------------------|---------------------------|
-| Frontend         | Streamlit                 |
-| Backend          | Python                    |
-| LLM              | LLaMA (via `llama-cpp-python`) |
-| Embeddings       | `sentence-transformers`   |
-| Vector Store     | FAISS                     |
-| File Parsing     | PyPDF2, docx2txt          |
-| AI Logic         | LangChain                 |
-
----
 
 ## 🧪 Local Setup Instructions
 
@@ -58,19 +42,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Step 4: Download a LLaMA model
-
-* Download a `.ggml` or `.gguf` model file (e.g., LLaMA 2 7B) from Hugging Face or other sources.
-* Place the file in the `models/` directory.
-* Example: `models/ggml-model.bin`
-
 ### Step 5: Create a `.env` file
 
 Manually create a `.env` file in the root directory:
 
 ```ini
 # .env
-MODEL_PATH=models/ggml-model.bin
+OPENAPI = ""
 ```
 
 You can add more environment variables here if needed.
