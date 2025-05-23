@@ -109,8 +109,3 @@ Created by \Rashi Makadia
 Feel free to connect on [LinkedIn](https://www.linkedin.com/in/rashi-makadia-11a10a249/)
 
 ```
-
----
-
-Would you like me to generate the actual `.env` template file or also provide a `utils.py` and `file_parser.py` for this setup?
-```
